@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit common product files.
+$(call inherit-product, vendor/zmodn/configs/common.mk)
+
 # Since the first thing in PRODUCT_COPY_FILES takes precedence, organize some 'overrides' like this.
 $(call inherit-product, device/samsung/tuna/overrides.mk)
 
@@ -21,6 +24,7 @@ $(call inherit-product, device/samsung/tuna/overrides.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from tuna device
 $(call inherit-product, device/samsung/tuna/device.mk)
+
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME   := zmodn_tuna
