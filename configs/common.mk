@@ -5,8 +5,6 @@ PRODUCT_DEVICE := generic
 
 # Common packages
 PRODUCT_PACKAGES += \
-    Browser \
-    ExactCalculator \
     LockClock
 
 # Common overlay
