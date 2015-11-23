@@ -3,9 +3,11 @@ PRODUCT_NAME := zmodn
 PRODUCT_BRAND := zmodn
 PRODUCT_DEVICE := generic
 
-
+# Common packages
 PRODUCT_PACKAGES += \
-    Launcher3
+    Browser \
+    ExactCalculator \
+    LockClock
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += \
@@ -13,7 +15,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # Bootanimation
 PRODUCT_COPY_FILES += \
-        vendor/zmodn/prebuilt/common/system/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/zmodn/prebuilt/common/system/media/bootanimation.zip:system/media/bootanimation.zip
 
 
 #Version details
