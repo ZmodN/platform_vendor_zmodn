@@ -7,6 +7,14 @@ PRODUCT_DEVICE := generic
 PRODUCT_PACKAGES += \
     Launcher3
 
+# Common overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/zmodn/overlay/common
+
+# Bootanimation
+PRODUCT_COPY_FILES += \
+        vendor/zmodn/prebuilt/common/system/media/bootanimation.zip:system/media/bootanimation.zip
+
 
 #Version details
 PRODUCT_VERSION_MAJOR = 0
