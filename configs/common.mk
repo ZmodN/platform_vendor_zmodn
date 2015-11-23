@@ -4,6 +4,9 @@ PRODUCT_BRAND := zmodn
 PRODUCT_DEVICE := generic
 
 
+PRODUCT_PACKAGES += \
+    Launcher3
+
 
 #Version details
 PRODUCT_VERSION_MAJOR = 0
